@@ -5,3 +5,5 @@ langchain
 langchain-community
 pypdf2
 faiss-cpu
+langchain-huggingface
+langchain-groq

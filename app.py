@@ -1,15 +1,21 @@
 import streamlit as st 
+import os
 from src.helper import get_pdf_text, get_text_chunks, get_vector_store, get_coversational_chain
+from dotenv import load_dotenv
+
+load_dotenv()
+GROQ_API_KEY=os.getenv("GROQ_API_KEY")
+
+
 
 def user_input(user_query):
-    response=st.session_state.conversation({"Question":user_query})
+    response=st.session_state.conversation({"question":user_query})
     st.session_state.chatHistory=response['chatHistory']
     for i, message in enumerate(st.session_state.chatHistory):
         if i%2==0:
             st.write(f"User: ",message.content)
         else:
             st.warning("Reply: ",message.content)
-
 
 
 def main():
@@ -25,10 +31,11 @@ def main():
     if user_query:
         user_input(user_query)
     
-    
+
     
     with st.sidebar:     
         st.title("Navigation Menu")
+        #GROQ_API_KEY= st.text_input("Enter your GROQ API key", type="password")
         pdf_docs=st.file_uploader("Upload your PDF files here", type="pdf", accept_multiple_files=True)
         
         if st.button("Submit & Process"):
