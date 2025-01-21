@@ -23,41 +23,6 @@ Whether you're dealing with research papers, legal documents, or business report
 - 🎯 **Streamlit UI:** User-friendly and interactive web interface.
 
 ---
-
-## 🛠️ Installation
-
-1. **Clone the Repository:**
-   ```bash
-        git clone https://github.com/kiran-91/Information-Retrieval-from-PDF.git
-        cd Information-Retrieval-from-PDF
-   ```
-
-2. **Create a Virtual Environment:**
-   ```bash
-        python -m venv venv
-        venv\Scripts\activate     # to activate on windows 
-        source venv/bin/activate  # to activate on mac
-   ```
-
-3. **Install Dependencies:**
-   ```bash
-        pip install -r requirements.txt
-   ```
-
-4. **Set Environment Variables:**
-   - Create a `.env` file in the root directory and add:
-     ```bash
-        HF_TOKEN=<your_huggingface_api_key>    # store your huggingface api key
-        GROQ_API_KEY=<your_groq_api_key>       # store your groq api key
-     ```
-
-5. **Run the Application:**
-   ```bash
-        streamlit run app.py
-   ```
-
----
-
 ## 📁 Project Structure
 
 ```
@@ -74,6 +39,37 @@ Whether you're dealing with research papers, legal documents, or business report
 
 ```
 
+## 🛠️ Installation
+
+1. **Clone the Repository:**
+```bash
+git clone https://github.com/kiran-91/Information-Retrieval-from-PDF.git
+cd Information-Retrieval-from-PDF
+```
+
+2. **Create a Virtual Environment:**
+```bash
+python -m venv venv
+venv\Scripts\activate     # to activate on windows 
+source venv/bin/activate  # to activate on mac
+```
+
+3. **Install Dependencies:**
+```bash
+pip install -r requirements.txt
+```
+
+4. **Set Environment Variables:**
+   - Create a `.env` file in the root directory and add:
+```bash
+HF_TOKEN=<your_huggingface_api_key>    # store your huggingface api key
+GROQ_API_KEY=<your_groq_api_key>       # store your groq api key
+```
+
+5. **Run the Application:**
+```bash
+streamlit run app.py
+```
 ---
 
 ## 🏗️ How It Works
