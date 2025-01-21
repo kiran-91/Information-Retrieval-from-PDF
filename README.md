@@ -118,7 +118,8 @@ Contributions are welcome! Feel free to submit issues and pull requests.
 
 ## 🌟 Acknowledgements
 
-- [LangChain](https://www.langchain.com/) for conversational AI.
+- [LangChain](https://www.langchain.com/) For providing a framework that simplifies the development of applications using language models
+- [Groq AI](https://www.groq.com/): For their powerful and efficient language model platform.
 - [FAISS](https://faiss.ai/) for vector storage.
 - [Streamlit](https://streamlit.io/) for the interactive UI.
 
