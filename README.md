@@ -61,13 +61,17 @@ Whether you're dealing with research papers, legal documents, or business report
 ## 📁 Project Structure
 
 ```
-.
-├── src
-│   ├── helper.py       # Helper functions for processing PDFs and AI interactions
-├── app.py             # Main Streamlit application
-├── requirements.txt   # Python dependencies
-├── .env.example       # Example environment file
-└── README.md          # Project documentation
+📂Directory structure:
+    └── kiran-91-information-retrieval-from-pdf/
+        ├── README.md
+        ├── LICENSE
+        ├── app.py
+        ├── requirements.txt
+        ├── setup.py
+        └── src/
+            ├── __init__.py
+            └── helper.py
+
 ```
 
 ---
