@@ -47,16 +47,16 @@ git clone https://github.com/kiran-91/Information-Retrieval-from-PDF.git
 cd Information-Retrieval-from-PDF
 ```
 
-2. **Create a Virtual Environment:**
+2. **Create a Virtual Environment (optional but recommended)**
 ```bash
 python -m venv venv
 venv\Scripts\activate     # to activate on windows 
-source venv/bin/activate  # to activate on mac
+source venv/bin/activate  # to activate on mac/linux
 ```
 
 3. **Install Dependencies:**
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt  # to install dependencies
 ```
 
 4. **Set Environment Variables:**
