@@ -5,6 +5,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+HF_TOKEN= os.getenv("HF_TOKEN")
+
 
 # Predefined model name
 PREDEFINED_MODEL_NAME = "all-MiniLM-L6-v2"
@@ -12,7 +14,7 @@ PREDEFINED_MODEL_NAME = "all-MiniLM-L6-v2"
 def user_input(user_query):
     try:
         if st.session_state.conversation is None:
-            st.error("Conversation chain is not initialized.")
+            st.error("Conversation chain is not initialized. Please look at the sidebar navigation👈🏻 and initialize the conversation chain.")
             return
         
         response = st.session_state.conversation({"question": user_query})
